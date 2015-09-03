@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10sp" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/c_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/logo"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:id="@+id/c_shortDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/c_name"
+                android:paddingTop="10sp"
+                android:text="@string/c_shortDescription_text"
+                android:textAppearance="?android:attr/textAppearanceSmall" />                      
+
+            <TextView
+                android:id="@+id/Instructors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/c_shortDescription"
+                android:paddingTop="20sp"
+                android:text="@string/Instructors"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             <LinearLayout
+                android:id="@+id/instructor_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="vertical"
+                android:layout_below="@+id/Instructors"
+                android:layout_alignParentLeft="true"/>           
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
